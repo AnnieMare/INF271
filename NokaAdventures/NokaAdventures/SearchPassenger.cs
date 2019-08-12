@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace NokaAdventures
 {
-    public partial class Form1 : Form
+    public partial class SearchPassenger : Form
     {
-        public Form1()
+        public SearchPassenger()
         {
             InitializeComponent();
         }
+
+      
     }
 }
