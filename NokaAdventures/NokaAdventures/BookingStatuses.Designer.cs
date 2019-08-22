@@ -30,10 +30,11 @@
         {
             this.PageTitle = new System.Windows.Forms.Label();
             this.dgvBookingStatus = new System.Windows.Forms.DataGridView();
-            this.Add = new System.Windows.Forms.Button();
             this.StatusDesciption = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Update = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Delete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Add = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBookingStatus)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,15 +65,6 @@
             this.dgvBookingStatus.Size = new System.Drawing.Size(488, 256);
             this.dgvBookingStatus.TabIndex = 1;
             // 
-            // Add
-            // 
-            this.Add.Location = new System.Drawing.Point(429, 318);
-            this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(103, 38);
-            this.Add.TabIndex = 2;
-            this.Add.Text = "Add Status";
-            this.Add.UseVisualStyleBackColor = true;
-            // 
             // StatusDesciption
             // 
             this.StatusDesciption.HeaderText = "Status Desciption";
@@ -96,12 +88,33 @@
             this.Delete.ToolTipText = "Delete Status";
             this.Delete.UseColumnTextForButtonValue = true;
             // 
+            // Add
+            // 
+            this.Add.Location = new System.Drawing.Point(311, 318);
+            this.Add.Name = "Add";
+            this.Add.Size = new System.Drawing.Size(103, 38);
+            this.Add.TabIndex = 2;
+            this.Add.Text = "Add Status";
+            this.Add.UseVisualStyleBackColor = true;
+            this.Add.Click += new System.EventHandler(this.Add_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(430, 318);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(103, 38);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
             // BookingStatuses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(588, 391);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Add);
             this.Controls.Add(this.dgvBookingStatus);
             this.Controls.Add(this.PageTitle);
@@ -123,5 +136,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn StatusDesciption;
         private System.Windows.Forms.DataGridViewButtonColumn Update;
         private System.Windows.Forms.DataGridViewButtonColumn Delete;
+        private System.Windows.Forms.Button button1;
     }
 }
